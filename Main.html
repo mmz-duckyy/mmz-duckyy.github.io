@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Game Review Website</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Welcome to the Game Review Website</h1>
+      <p>Here you can find reviews and ratings for your favorite games.</p>
+      <button id="showMessage">Show Message</button>
+      <p id="message" style="display: none;">JavaScript is working!</p>
+    </main>
+    <footer>
+      <p>Copyright © 2023 Game Review Website</p>
+    </footer>
+
+    <script>
+      const button = document.querySelector("#showMessage");
+      const message = document.querySelector("#message");
+
+      button.addEventListener("click", function() {
+        message.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
